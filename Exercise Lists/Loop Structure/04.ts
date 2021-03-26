@@ -2,7 +2,7 @@
 
 let countryA: number = 80000;
 let countryB: number = 200000;
-let count: number = 0; countryA;
+let count: number = 0;
 
 while (countryA < countryB) {
     countryA = countryA + (countryA * 0.03);

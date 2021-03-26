@@ -13,7 +13,7 @@ console.log('Informe os numeros');
 while (i < 9) {
     nums = scanf('%f');
 
-    if (nLess == null || nBigger == null) {
+    if (!nLess || !nBigger) {
         nLess = nums;
         nBigger = nums;
     }
