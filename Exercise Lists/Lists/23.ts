@@ -31,7 +31,7 @@ let users = [{
 let txt: Buffer;
 let total: number = 0;
 
-txt = fs.readFileSync('usuarios.txt');
+txt = fs.readFileSync('users.txt');
 
 const resultBuffer = txt.toString();
 

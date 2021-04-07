@@ -109,4 +109,4 @@ result[y + 1] = `\n O melhor jogador foi o numero ${players[0].shirt}, com ${pla
 
 console.log(`O melhor jogador foi o numero ${players[0].shirt}, com ${players[0].votes} votos, correspondendo a ${players[0].percent}% do total de votos.`);
 
-saveFile('resultado.txt', result);
+saveFile('result.txt', result);
