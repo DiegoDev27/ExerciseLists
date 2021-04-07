@@ -14,7 +14,7 @@ const name = scanf('%S');
 
 const resultName = nameVertically(name);
 
-console.log(resultName);
+console.log('\n' + resultName);
 
 
 function nameVertically(text: string): string {
