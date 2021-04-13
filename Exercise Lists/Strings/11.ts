@@ -51,6 +51,12 @@ function hangman() {
             console.log('|   / \\ ');
             console.log('_       ');
             console.log();
+
+            if (error === 6) {
+                console.log(`Morreu! A palavra era ${randomWord}` + '\n');
+                console.log('\n' + 'Fim de Jogo, Você perdeu!' + '\n');
+                break;
+            }
         }
 
         if (error === 5) {
@@ -116,7 +122,7 @@ function hangman() {
         if (error === 0) {
             console.log();
             console.log('|----- ');
-            console.log('|      ');
+            console.log('|    | ');
             console.log('|      ');
             console.log('|      ');
             console.log('|      ');
@@ -139,14 +145,8 @@ function hangman() {
         }
 
         if (!hit) {
-            console.log('\n' + `-> Você errou pela ${error + 1}ª vez. Tente de novo! (Maximo de 6 erros)` + '\n');
+            console.log('\n' + `-> Você errou pela ${error + 1}ª vez. (Maximo de 6 erros)` + '\n');
             error++;
-        }
-
-        if (error === 7) {
-            console.log(`Morreu! A palavra era ${randomWord}` + '\n');
-            console.log('\n' + 'Fim de Jogo, Você perdeu!' + '\n');
-            break;
         }
 
         if (!word.find(x => x === '_ ')) {
