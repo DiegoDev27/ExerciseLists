@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+Exercise Lists/tsconfig.json
+Exercise Lists/package.json
+Exercise Lists/package-lock.json
+Exercise Lists/tslint.json
