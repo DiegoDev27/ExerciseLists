@@ -54,15 +54,15 @@ class Tamagushi {
 
     getHumor() {
 
-        if (this.health >= 70 && this.hunger >= 70) {
+        if (this.health >= 70 && this.hunger <= 70) {
             return 'Im Happy!';
         }
 
-        if (this.health >= 50 && this.hunger >= 50) {
+        if (this.health >= 50 && this.hunger <= 50) {
             return 'Im not so good!';
         }
 
-        if (this.health >= 30 && this.hunger >= 30) {
+        if (this.health >= 30 && this.hunger <= 30) {
             return 'Im very angry!';
         }
 
