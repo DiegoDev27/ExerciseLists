@@ -7,9 +7,9 @@ import scanf from "scanf";
 
 class Ball {
 
-    color: string;
-    circumference: number;
-    material: string;
+    private color: string;
+    private circumference: number;
+    private material: string;
 
 
     constructor(color?: string, circumference?: number, material?: string) {
@@ -46,22 +46,33 @@ class Ball {
 
 const ball = new Ball();
 
+let ans = 'sim';
 
-console.log('Informe a cor da bola: ');
-const ballColor = scanf('%S');
+while (ans === 'sim') {
 
-console.log('Informe a circunferencia da bola: ');
-const ballCircumference = scanf('%d');
+    console.log('Informe a cor da bola: ');
+    const ballColor = scanf('%S');
 
-console.log('Informe o material da bola:');
-const ballMaterial = scanf('%S');
+    console.log('Informe a circunferencia da bola: ');
+    const ballCircumference = scanf('%d');
 
-
-ball.setColor(ballColor);
-ball.setCircumference(ballCircumference);
-ball.setMaterial(ballMaterial);
+    console.log('Informe o material da bola:');
+    const ballMaterial = scanf('%S');
 
 
-console.log(`Cor da bola: ${ball.getColor()}
+    ball.setColor(ballColor);
+    ball.setCircumference(ballCircumference);
+    ball.setMaterial(ballMaterial);
+
+
+    console.log(`Cor da bola: ${ball.getColor()}
 Circunferencia da bola: ${ball.getCircumference()}
 Material da bola: ${ball.getMaterial()} `);
+
+    console.log('Deseja continuar? Digite sim para continuar e nao para encerrar: ');
+    ans = scanf('%S');
+
+    if (ans === 'nao') {
+        break;
+    }
+}
